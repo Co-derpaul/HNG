@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>HNG Internship: Front-end</title>
+    <link rel="stylesheet" href="./slack1.css">
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">HNG</span> Front-End Project:stage one</h1>
+        
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Required Elements </h1>
+        <hr>
+        <p>Slack Profile Picture</p>
+        <img id="slackProfilePic" src="./pic.jpg" alt="Slack_profile_pic">
+        <hr>
+        <p>Slack Name</p> <p id="slackDisplayName">coder.paul</p>
+        <hr>
+        <p>Slack Email</p> <p id="slackEmail">paul.g.ameh@gmail.com</p>
+        <hr>
+        <p>Current Time in UTC</p> <p id="currentTimeUTC"></p>
+        <p>Current Day of the Week</p> <p id="currentDay"></p>
+        
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>LINKS</h1>
+        <form>
+          <a href="http://hng.tech/learn" id="hngLink">hng.tech/learn</a>
+          <br>
+          <a href="http://keyword.dog" id="keyWordLink">keyword.dog</a>
+          <br>
+          <a href="http://scrapeanyweb.site" id="scrapeanyweblink">Scrape Any Website</a>
+        </form>
+      </div>
+    </section>
+    
+    <section id="blog">
+
+    <h1>My Goals For The Next Two Years In The Tech Field</h1>
+
+<p>As I continue on my journey in the tech industry, I'm excited to share my goals for the next two years. These objectives will help me stay focused, learn new skills, and make meaningful contributions to the tech community.</p>
+
+<h3>Year One:</h3>
+
+<p>1. Develop expertise in a specific area: I aim to dive deeper into machine learning and natural language processing, becoming proficient in tools like TensorFlow and PyTorch.</p>
+<p>2. Build personal projects: I plan to create at least three personal projects, showcasing my skills and exploring new technologies.</p>
+<p>3. Attend industry conferences: I hope to attend two conferences, networking with professionals and learning about the latest advancements.</p>
+
+<h3>Year Two:</h3>
+
+<p>1. Lead a team project: I aspire to lead a team project, applying my skills and experience to drive innovation and collaboration.</p>
+by<p>2. Publish technical articles: I aim to write and publish at least four technical articles, sharing my knowledge and experiences with the community.</p>
+<p>3. Mentor a junior developer: I hope to pay it forward by mentoring a junior developer, helping them navigate the industry and grow in their career.</p>
+
+<p>By achieving these goals, I'm excited to take my skills to the next level, make meaningful contributions to the tech community, and continue growing as a professional in the ever-evolving tech landscape.</p>
+
+</section>
+
+
+<script>
+    
+const d = new Date();
+document.getElementById("currentTimeUTC").innerHTML = d.toUTCString();
+
+const p = new Date();
+const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+document.getElementById("currentDay").innerHTML = days[p.getDay()];
+    
+</script>
+    
+  </body>
+</html>
